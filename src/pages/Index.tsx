@@ -2,6 +2,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 
 export default function Index() {
+  const fishingAreas = [
+    "Северно-Западная часть Тихого океана",
+    "Северо-Восточная часть Тихого океана",
+    "Северо-Восточная Атлантика",
+    "Индийский океан (Восточный район)",
+    "Юго-Восточная часть Тихого океана"
+  ];
+
   const solutions = [
     {
       number: "1",
@@ -20,6 +28,24 @@ export default function Index() {
       title: "Будьте осознанным потребителем",
       description: "Частицы микропластика из зубной пасты, геля для душа и одежды попадают в океан через сточные воды.",
       icon: "Leaf"
+    },
+    {
+      number: "4",
+      title: "Организуйте кампанию по очистке пляжа",
+      description: "Самый наглядный способ увидеть загрязнение океана - побывать на ближайшем пляже. Соберитесь с друзьями и соберите мусор, затем правильно утилизируйте его.",
+      icon: "Users"
+    },
+    {
+      number: "5",
+      title: "Будьте ответственным владельцем домашнего животного",
+      description: "Наполнитель для кошачьих туалетов очень опасен для морских существ, поэтому не смывайте его в унитаз, чтобы он не очутился в океане.",
+      icon: "Cat"
+    },
+    {
+      number: "6",
+      title: "Сократить потребление рыбы",
+      description: "Неконтролируемый рыбный промысел считается самой большой угрозой для океана. Почти все рыболовные компании в мире грешат чрезмерной добычей.",
+      icon: "Fish"
     }
   ];
 
@@ -80,7 +106,7 @@ export default function Index() {
             </CardContent>
           </Card>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
             <Card className="border-2 border-primary/20 shadow-xl hover:shadow-2xl transition-shadow duration-300 animate-fade-in" style={{animationDelay: '0.2s'}}>
               <CardContent className="p-8">
                 <div className="flex items-start gap-4 mb-4">
@@ -113,6 +139,37 @@ export default function Index() {
               </CardContent>
             </Card>
           </div>
+
+          <Card className="border-2 border-primary/20 shadow-2xl bg-gradient-to-br from-primary/5 to-secondary/10 animate-fade-in" style={{animationDelay: '0.4s'}}>
+            <CardContent className="p-10">
+              <div className="flex items-center gap-4 mb-8">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Icon name="Anchor" size={32} className="text-primary" />
+                </div>
+                <h3 className="text-3xl font-bold text-primary">Основные районы рыболовства</h3>
+              </div>
+              
+              <p className="text-lg text-gray-800 mb-6 leading-relaxed">
+                Эти районы являются крупнейшими по объемам вылова из-за большого скопления рыбных ресурсов:
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-4">
+                {fishingAreas.map((area, index) => (
+                  <div 
+                    key={index}
+                    className="flex items-start gap-3 p-4 rounded-lg bg-white/80 border border-primary/10 hover:border-primary/30 transition-colors duration-200"
+                  >
+                    <div className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center flex-shrink-0 mt-1">
+                      <Icon name="MapPin" size={18} className="text-white" />
+                    </div>
+                    <p className="text-base text-gray-800 font-medium leading-relaxed">
+                      {area}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
@@ -124,7 +181,7 @@ export default function Index() {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-16 animate-fade-in">
             <Icon name="Lightbulb" size={64} className="text-primary mx-auto mb-6" />
-            <h2 className="text-5xl md:text-6xl font-bold text-primary mb-6">3 шага для спасения океанов</h2>
+            <h2 className="text-5xl md:text-6xl font-bold text-primary mb-6">6 шагов для спасения океанов</h2>
             <div className="w-32 h-1.5 bg-secondary mx-auto rounded-full"></div>
           </div>
 
@@ -179,6 +236,21 @@ export default function Index() {
               </div>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-gradient-to-br from-primary via-secondary to-primary">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="bg-white/95 rounded-3xl p-12 shadow-2xl animate-scale-in">
+            <Icon name="Sparkles" size={64} className="text-primary mx-auto mb-6" />
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Вывод</h2>
+            <p className="text-2xl text-gray-800 font-semibold leading-relaxed mb-4">
+              Не загрязняйте воды Мирового океана!
+            </p>
+            <p className="text-xl text-gray-700 leading-relaxed">
+              И помогайте предотвратить это вместе с нами!
+            </p>
+          </div>
         </div>
       </section>
 
