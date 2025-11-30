@@ -258,7 +258,10 @@ export default function Index() {
         <div className="max-w-6xl mx-auto text-center">
           <Icon name="Waves" size={48} className="mx-auto mb-4 opacity-80" />
           <p className="text-xl font-semibold mb-2">Вместе мы можем спасти океаны</p>
-          <p className="text-white/80">Каждое действие имеет значение 🌊</p>
+          <p className="text-white/80 mb-6">Каждое действие имеет значение 🌊</p>
+          <div className="pt-6 border-t border-white/20">
+            <p className="text-white/70 text-sm">Презентацию делал <span className="font-semibold text-white">Ганжа Илья</span></p>
+          </div>
         </div>
       </footer>
     </div>
