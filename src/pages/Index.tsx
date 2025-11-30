@@ -254,6 +254,24 @@ export default function Index() {
         </div>
       </section>
 
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-5xl md:text-6xl font-bold text-primary mb-8 animate-fade-in">
+            Спасибо за внимание!
+          </h2>
+          <div className="animate-scale-in" style={{animationDelay: '0.2s'}}>
+            <img 
+              src="https://cdn.poehali.dev/projects/f07c828b-4894-4567-ad11-f6f4fdc6a363/files/3c2e19ac-9666-4860-9a72-8f8552d27633.jpg" 
+              alt="Спасибо за внимание" 
+              className="rounded-2xl shadow-2xl mx-auto max-w-2xl w-full"
+            />
+          </div>
+          <p className="text-2xl text-gray-700 font-semibold mt-8 animate-fade-in" style={{animationDelay: '0.4s'}}>
+            Хочу пятёрку! 🌟
+          </p>
+        </div>
+      </section>
+
       <footer className="bg-primary text-white py-12 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <Icon name="Waves" size={48} className="mx-auto mb-4 opacity-80" />
