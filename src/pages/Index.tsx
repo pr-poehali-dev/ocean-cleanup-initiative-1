@@ -72,7 +72,7 @@ export default function Index() {
           </div>
           
           <h1 className="text-7xl md:text-8xl font-bold text-white mb-6 animate-fade-in tracking-tight drop-shadow-2xl">
-            Лолита
+            Шатилова Лолита
           </h1>
           
           <p className="text-2xl md:text-3xl text-white/90 font-semibold animate-fade-in drop-shadow-lg" style={{animationDelay: '0.2s'}}>
