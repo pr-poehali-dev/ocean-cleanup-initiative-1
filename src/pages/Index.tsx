@@ -256,17 +256,14 @@ export default function Index() {
 
       <section className="py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-5xl md:text-6xl font-bold text-primary mb-8 animate-fade-in">
-            Спасибо за внимание!
-          </h2>
-          <div className="animate-scale-in" style={{animationDelay: '0.2s'}}>
+          <div className="animate-scale-in">
             <img 
-              src="https://cdn.poehali.dev/projects/f07c828b-4894-4567-ad11-f6f4fdc6a363/files/3c2e19ac-9666-4860-9a72-8f8552d27633.jpg" 
+              src="https://cdn.poehali.dev/projects/f07c828b-4894-4567-ad11-f6f4fdc6a363/files/eceee1ed-eaa6-46cb-b478-07b43cace158.jpg" 
               alt="Спасибо за внимание" 
               className="rounded-2xl shadow-2xl mx-auto max-w-2xl w-full"
             />
           </div>
-          <p className="text-2xl text-gray-700 font-semibold mt-8 animate-fade-in" style={{animationDelay: '0.4s'}}>
+          <p className="text-2xl text-gray-700 font-semibold mt-8 animate-fade-in" style={{animationDelay: '0.2s'}}>
             Хочу пятёрку! 🌟
           </p>
         </div>
