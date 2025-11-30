@@ -69,8 +69,19 @@ export default function Index() {
             <div className="w-32 h-1.5 bg-secondary mx-auto rounded-full"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <Card className="border-2 border-primary/20 shadow-xl hover:shadow-2xl transition-shadow duration-300 animate-fade-in" style={{animationDelay: '0.1s'}}>
+          <Card className="border-2 border-secondary shadow-2xl bg-gradient-to-br from-secondary/5 to-accent/20 animate-fade-in mb-16" style={{animationDelay: '0.1s'}}>
+            <CardContent className="p-10 text-center">
+              <Icon name="Heart" size={56} className="text-primary mx-auto mb-6" />
+              <h3 className="text-3xl font-bold text-primary mb-4">Наша миссия</h3>
+              <p className="text-xl text-gray-800 leading-relaxed max-w-3xl mx-auto font-semibold">
+                Узнать, как загрязнение вод Мирового океана влияет на его обитателей, и сохранить здоровье океанов 
+                путем сокращения загрязнений и изменения потребительского поведения.
+              </p>
+            </CardContent>
+          </Card>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="border-2 border-primary/20 shadow-xl hover:shadow-2xl transition-shadow duration-300 animate-fade-in" style={{animationDelay: '0.2s'}}>
               <CardContent className="p-8">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -86,7 +97,7 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-primary/20 shadow-xl hover:shadow-2xl transition-shadow duration-300 animate-fade-in" style={{animationDelay: '0.2s'}}>
+            <Card className="border-2 border-primary/20 shadow-xl hover:shadow-2xl transition-shadow duration-300 animate-fade-in" style={{animationDelay: '0.3s'}}>
               <CardContent className="p-8">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-12 h-12 rounded-full bg-destructive/10 flex items-center justify-center flex-shrink-0">
@@ -102,17 +113,6 @@ export default function Index() {
               </CardContent>
             </Card>
           </div>
-
-          <Card className="border-2 border-secondary shadow-2xl bg-gradient-to-br from-secondary/5 to-accent/20 animate-fade-in" style={{animationDelay: '0.3s'}}>
-            <CardContent className="p-10 text-center">
-              <Icon name="Heart" size={56} className="text-primary mx-auto mb-6" />
-              <h3 className="text-3xl font-bold text-primary mb-4">Наша миссия</h3>
-              <p className="text-xl text-gray-800 leading-relaxed max-w-3xl mx-auto font-semibold">
-                Узнать, как загрязнение вод Мирового океана влияет на его обитателей, и сохранить здоровье океанов 
-                путем сокращения загрязнений и изменения потребительского поведения.
-              </p>
-            </CardContent>
-          </Card>
         </div>
       </section>
 
