@@ -124,7 +124,7 @@ export default function Index() {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-16 animate-fade-in">
             <Icon name="Lightbulb" size={64} className="text-primary mx-auto mb-6" />
-            <h2 className="text-5xl md:text-6xl font-bold text-primary mb-6">6 шагов для спасения океанов</h2>
+            <h2 className="text-5xl md:text-6xl font-bold text-primary mb-6">3 шага для спасения океанов</h2>
             <div className="w-32 h-1.5 bg-secondary mx-auto rounded-full"></div>
           </div>
 
